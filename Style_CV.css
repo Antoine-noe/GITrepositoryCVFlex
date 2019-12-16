@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+@media (max-width: 800px){
+    header{height: 25vh;}
+    
+}
+body {
+    margin: 0;
+    height: 100vh;
+
+    background-size: cover;
+    background-position-x: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+header {
+    height: 20vh;
+    width: auto;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background: linear-gradient(rgb(0, 0, 0), rgb(20, 20, 30));
+   
+
+
+}
+nav {
+    height: 40px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    opacity: 50%;
+    background: black;
+    align-items: center;
+
+}
+a, a:hover, a:active, a:default {
+    text-decoration: none;
+    color: azure;
+}
+a:hover {
+    color: darkgoldenrod;
+    transform:scale(1.25);
+}
+a:active {
+    color: white;
+}
+a {
+    margin-left: 20px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+#nom {
+    font-size: 40px;
+    font-weight: bold;
+}
+#DWM {
+    font-size: 25px;
+    font-weight: bolder;
+}
+.wallpaper {
+    background-image: url("Images/Backret.jpg");
+    background-position-x: center;
+    background-repeat: repeat-x;
+
+}
+.title{
+    font-weight: 700;
+    color: transparent;
+    font-size:60px;
+    background: url("Images/d3.gif");
+    background-size: cover;
+    -webkit-background-clip: text;
+    position:relative;
+    text-align:center;
+    line-height:50px;
+    letter-spacing: -5px;
+}
+
+main {
+     height: calc(80vh - 40px);
+     color: aliceblue;
+     margin: 0;
+     padding: 0;
+     display: flex;
+}
+
+.section1 {
+    display: flex;
+    flex-flow: column wrap;
+    order: 1;
+    flex: 1;
+    align-content: center;
+    margin-right: 3vw;
+    justify-content: center;
+}
+
+.section2 {
+    display: flex;
+    flex-flow: column wrap;
+    order: 2;
+    flex: 1;
+    align-content: center;
+    margin-left: 3vw;
+    justify-content: center;
+
+
+}
+h2 {
+    text-align: center;
+}
+ul{
+    list-style: none;
+
+}
+
+
+@-webkit-keyframes clignote {
+    0%{box-shadow:0px 0px 1120px #f5f2d5;}
+    50%{box-shadow:0px 0px 0px #f5f2d5;}
+    100%{box-shadow:0px 0px 110px #f5f2d5;}
+}
+
+.clignote {
+    display: flex;
+    position: absolute;
+    margin-left: calc(51vw - 140px);
+    width: 280px;
+    height: 5px;
+    box-shadow:1580px 1580px 1580px #f5f2d5;
+    -webkit-animation-name: clignote; /*on affecte l'animation clignote à notre bouton*/
+    -webkit-animation-duration: 0.08s; /*on définit la durée de l'animation à 1s*/
+    -webkit-animation-iteration-count:infinite; /*on dit que l'animation se répétera à l'infini.*/
+    margin-top: 5vh;
+}
